@@ -31,7 +31,7 @@
     "bin": "dist/api/bin.js",
     "scripts": {
         "prepublishOnly": "npm run test && npm run spellcheck",
-        "test": "tsc && test-vir './**/!(*.type).test.js'",
+        "test": "tsc && test-vir \"./**/!(*.type).test.js\"",
         "spellcheck": "cspell --no-progress --unique \"./**/*\"",
         "test:full": "npm run test && npm run spellcheck -- --no-progress && npm run format:check",
         "format": "npm run format:base -- --write",
